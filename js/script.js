@@ -21,19 +21,28 @@ let parolaPalindroma = false;
 function palindromo (parola1) {
     
     const arrayParola = [];
+
+    // splittare la parola inserita 
     
     const parolaSplit = uParola.split('');
     console.log(parolaSplit);
+
+    // metterla in array
     
     arrayParola.push(uParola);
+
+    // effettuare il reverse dell'array
     
     const parolaReverse = parolaSplit.reverse();
     
     console.log(parolaReverse);
+
+    // unire le lettere rovesciate in una nuova parola
     
     const parolaReverseFinale = parolaReverse.join('');
     console.log(parolaReverseFinale);
-    
+
+    // controllare se la parola è palindroma
     
     if (uParola === parolaReverseFinale) {
     
@@ -41,6 +50,8 @@ function palindromo (parola1) {
     }
     
 }
+
+// richiamare la funzione per restituire il risulatato
 
 const parolaFinale = palindromo(uParola);
 console.log(parolaPalindroma);
