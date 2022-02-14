@@ -31,7 +31,7 @@ do {
 function pcRandomNumber () {
 
     const pcNumberRandom = Math.floor(Math.random()* 5 ) + 1;
-    console.log(pcNumberRandom);
+    //console.log(pcNumberRandom);
 
     return pcNumberRandom;
 
@@ -53,7 +53,7 @@ function sommaNumeri(num1, num2) {
 }
 
 const somma_numeri = sommaNumeri(uNumber, pcNumber);
-console.log(somma_numeri);
+//console.log(somma_numeri);
 
 
 // funzione pari dispari 
@@ -62,11 +62,11 @@ function pariDispari (sommaNumeri) {
 
     if (pari_o_dispari === pari && somma_numeri % 2 === 0) {
     
-        return somma_numeri, 'la somma è pari... hai vinto';
+        return 'la somma è pari... hai vinto';
     
     } else if (pari_o_dispari === dispari && somma_numeri % 2 !== 0) {
     
-        return somma_numeri, 'la somma è dispari... hai vinto';
+        return 'la somma è dispari... hai vinto';
     
     } else {
     
@@ -76,4 +76,4 @@ function pariDispari (sommaNumeri) {
 }
 
 const sommaPari_o_Dispari = pariDispari(somma_numeri);
-console.log(sommaPari_o_Dispari);
+console.log(somma_numeri, sommaPari_o_Dispari);
