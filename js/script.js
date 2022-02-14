@@ -3,6 +3,8 @@ se la parola inserita è palindroma */
 
 // chidere all'utente una parola
 
+let uParola = '';
+
 do {
     
     uParola = prompt('dimmi una parola').trim().toLocaleLowerCase();

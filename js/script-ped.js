@@ -8,6 +8,10 @@ Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari
 
 // chiedo all'utente un numero 
 
-const uNumber = parseInt(prompt('scegli pari o dispari, e inserisci un numero da 1 a 5'));
+do {
+    
+    const uNumber = parseInt(prompt('scegli pari o dispari, e inserisci un numero da 1 a 5'));
+    console.log(uNumber);
 
-console.log(uNumber);
+}
+
