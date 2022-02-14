@@ -5,6 +5,11 @@ Generiamo un numero random (sempre da 1 a 5) per il computer
 Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari 
 (usando una funzione) Dichiariamo chi ha vinto. */
 
+// scegli apri o dispari
+
+const pari_o_dispari = (prompt('pari o dispari')).toLowerCase().trim();
+const pari = 'pari';
+const dispari = 'dispari';
 
 // chiedo all'utente un numero 
 
@@ -12,7 +17,7 @@ let uNumber = 0;
 
 do {
     
-    uNumber = parseInt(prompt('scegli pari o dispari, e inserisci un numero da 1 a 5'));
+    uNumber = parseInt(prompt('inserisci un numero da 1 a 5'));
     console.log(uNumber);
 
     // effettuo controllo su inserimento n utente
@@ -23,11 +28,52 @@ do {
 
 // funzione per generare numero random per pc
 
-function pcRandomNumber (num1) {
+function pcRandomNumber () {
 
-    const pcNumber = Math.floor(Math.random()* 5 ) + 1;
-    console.log(pcNumber);
+    const pcNumberRandom = Math.floor(Math.random()* 5 ) + 1;
+    console.log(pcNumberRandom);
 
-    return pcNumber;
+    return pcNumberRandom;
 
 }
+
+// richiamo il numero del pc
+
+const pcNumber = pcRandomNumber();
+console.log(pcNumber);
+
+// funzione per sommare i due numeri e controllare se e pari o dispari
+
+function sommaNumeri(num1, num2) {
+
+    const sommaUnumberPcnumber = num1 + num2;
+
+    return sommaUnumberPcnumber;
+
+}
+
+const somma_numeri = sommaNumeri(uNumber, pcNumber);
+console.log(somma_numeri);
+
+
+// funzione pari dispari 
+
+function pariDispari (sommaNumeri) {
+
+    if (pari_o_dispari === pari && somma_numeri % 2 === 0) {
+    
+        return somma_numeri, 'la somma è pari... hai vinto';
+    
+    } else if (pari_o_dispari === dispari && somma_numeri % 2 !== 0) {
+    
+        return somma_numeri, 'la somma è dispari... hai vinto';
+    
+    } else {
+    
+        return 'hai perso... ritenta';
+    }
+
+}
+
+const sommaPari_o_Dispari = pariDispari(somma_numeri);
+console.log(sommaPari_o_Dispari);
