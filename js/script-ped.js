@@ -14,8 +14,8 @@ do {
 
 } while (pari_o_dispari <= 0 || !isNaN(pari_o_dispari)) {
 
-
 }
+console.log(pari_o_dispari);
 
 const pari = 'pari';
 const dispari = 'dispari';
