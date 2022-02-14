@@ -7,7 +7,16 @@ Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari
 
 // scegli apri o dispari
 
-const pari_o_dispari = (prompt('pari o dispari')).toLowerCase().trim();
+let pari_o_dispari = 0;
+
+do {
+    pari_o_dispari = (prompt('pari o dispari')).toLowerCase().trim();
+
+} while (pari_o_dispari <= 0 || !isNaN(pari_o_dispari)) {
+
+
+}
+
 const pari = 'pari';
 const dispari = 'dispari';
 
