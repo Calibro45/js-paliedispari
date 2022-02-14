@@ -14,26 +14,33 @@ do {
 
 }
 
-const arrayParola = [];
-
-const parolaSplit = uParola.split('');
-console.log(parolaSplit);
-
-arrayParola.push(uParola);
-
-const parolaReverse = parolaSplit.reverse();
-
-console.log(parolaReverse);
-
-const parolaReverseFinale = parolaReverse.join('');
-console.log(parolaReverseFinale);
-
 // creare funzione 
+
+let parolaPalindroma = false;
 
 function palindromo (parola1) {
     
-
+    const arrayParola = [];
     
+    const parolaSplit = uParola.split('');
+    console.log(parolaSplit);
+    
+    arrayParola.push(uParola);
+    
+    const parolaReverse = parolaSplit.reverse();
+    
+    console.log(parolaReverse);
+    
+    const parolaReverseFinale = parolaReverse.join('');
+    console.log(parolaReverseFinale);
+    
+    
+    if (uParola === parolaReverseFinale) {
+    
+        return parolaPalindroma = true;
+    }
     
 }
 
+const parolaFinale = palindromo(uParola);
+console.log(parolaPalindroma);
