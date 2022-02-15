@@ -11,14 +11,9 @@ do {
     
     console.log(uParola);
 
-} while ((uParola  <= 0) || (!isNaN(uParola))) {
-
-
-}
+} while ((uParola  <= 0) || (!isNaN(uParola)));
 
 // creare funzione 
-
-let parolaPalindroma = false;
 
 function palindromo (parola1) {
     
@@ -26,12 +21,12 @@ function palindromo (parola1) {
 
     // splittare la parola inserita 
     
-    const parolaSplit = uParola.split('');
+    const parolaSplit = parola1.split('');
     console.log(parolaSplit);
 
     // metterla in array
     
-    arrayParola.push(uParola);
+    arrayParola.push(parola1);
 
     // effettuare il reverse dell'array
     
@@ -46,14 +41,18 @@ function palindromo (parola1) {
 
     // controllare se la parola è palindroma
     
-    if (uParola === parolaReverseFinale) {
+    if (parola1 === parolaReverseFinale) {
     
-        return parolaPalindroma = true;
+        return true;
+
+    } else {
+
+        return false;
     }
-    
+        
 }
 
 // richiamare la funzione per restituire il risulatato
 
 const parolaFinale = palindromo(uParola);
-console.log(parolaPalindroma);
+console.log(palindromo(uParola));

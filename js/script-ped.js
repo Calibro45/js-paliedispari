@@ -12,9 +12,8 @@ let pari_o_dispari = 0;
 do {
     pari_o_dispari = (prompt('pari o dispari')).toLowerCase().trim();
 
-} while (pari_o_dispari <= 0 || !isNaN(pari_o_dispari)) {
+} while (pari_o_dispari <= 0 || !isNaN(pari_o_dispari));
 
-}
 console.log(pari_o_dispari);
 
 const pari = 'pari';
@@ -31,9 +30,7 @@ do {
 
     // effettuo controllo su inserimento n utente
 
-} while ((isNaN(uNumber)) || (uNumber <= 0) || (uNumber > 5)) {
-
-}
+} while ((isNaN(uNumber)) || (uNumber <= 0) || (uNumber > 5));
 
 // funzione per generare numero random per pc
 
